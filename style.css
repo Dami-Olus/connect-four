@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.markers {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.marker {
+  height: 0px;
+  width: 0px;
+  margin-bottom: 10px;
+  width: 0;
+	height: 0;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 25px solid #555;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.board-position {
+  height: 50px;
+  width: 50px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.board-positions{
+  margin-bottom: 20px;
+}
