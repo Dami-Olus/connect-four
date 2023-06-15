@@ -16,22 +16,23 @@ body {
 .markers {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  margin-top: 15px;
 }
 
 .marker {
-  height: 0px;
+  /* height: 0px;
   width: 0px;
   margin-bottom: 10px;
   width: 0;
 	height: 0;
 	border-left: 16px solid transparent;
 	border-right: 16px solid transparent;
-	border-top: 25px solid #555;
-}
-
-.row{
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+	border-top: 25px solid #555; */
+  height: 10px;
+  border-width: 35px;
+  border-style: solid;
+  border-color: lightgrey transparent transparent;
+  transform: scale(0.7);
 }
 
 .board-position {
@@ -45,4 +46,7 @@ body {
 
 .board-positions{
   margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
